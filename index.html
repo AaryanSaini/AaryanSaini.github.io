@@ -3,90 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>name</title>
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-        
-    h1{ background-color: orange; }
-    div:hover{ color: gold;}
-    div{
-        margin-left: 46.5%;
-        margin-bottom: 20px;
-    }
-    pre{
-     color: red;
-     background-color: rgb(0, 255, 81);
-     width: 300px;
-     font-size: larger;
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     font-weight: bold;
-     font-style: oblique;
-     margin-left: 40%;
-    }
-    div2>h3{
-     color: brown;
-    }
-    div{border: solid red;
-  width: 100px;}
-  div4>pre{
-     background-color: blue;
-     color: chartreuse;
-     font-size: large;
-     font-weight: bolder;
-     font-style: italic;
-  }
-  body{
-     text-align: center;
-     background-color: cyan;
-  }
-  div4>H4:hover{
-    color:darkorange;
-  }
-  div4>H4{
-    border: solid yellow;
-    color: dark red;
-    background-color: yellowgreen;
-
-  }
-  .om{
-    width: 50%;
-    align-self: center;
-    align-items: center;
-    align-content: center;
-    margin-left: 30%;
-  }
-    
-
- </style>
-
-<div class="om">
 <body>
-    
-    
-    <h1>IDENTEFICATION</h1>
-    <div>ID = Saini22 </div>
-   <div1> <img src="IMG_20230529_073132.jpg" alt="no img" width="150"  ></div1>
-    <pre style="align-self: center;">
+    <header>
+        <h1>My Webpage</h1>
+    </header>
+    <main>
+        <section id="profile">
+            <img src="IMG_20230529_073132.jpg" alt="Profile picture">
+            <div>
+                <pre>
 NAME = Aaryan saini
 COLLEGE = CHITKARA
 semester = 4th
 branch = cse
 village = gadhauli
 CGPA = 10
-    </pre>
-    <div2><h3>contact</h3>
-    <a href="aaryan16.be22@chitkara.edu.in">MAIL</a></div2>
-  <br><br>  9416878472
-  <div4>  <H4>GAME</H4>
-    <pre>
+                </pre>
+                <div class="contact">
+                    <h3>Contact</h3>
+                    <a href="mailto:aaryan16.be22@chitkara.edu.in">MAIL</a>
+                    <p>9416878472</p>
+                </div>
+            </div>
+        </section>
+        <section id="game">
+            <h2>Game</h2>
+            <pre>
 BGMI PLAYER
 id = SainiDON22
 KD = 10
-ACTIVE = Everyday 
-</pre>
-</div4>
-
-</div>       
-    
+ACTIVE = Everyday
+            </pre>
+        </section>
+    </main>
 </body>
+<style>
+    body {
+  text-align: center;
+  background-color: cyan;
+}
+
+header {
+  background-color: orange;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+}
+
+#profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+#profile img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+#profile pre {
+  color: red;
+  background-color: rgb(0, 255, 81);
+  width: 300px;
+  font-size: larger;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-style: oblique;
+  margin: 0;
+}
+
+.contact {
+  margin-top: 1rem;
+}
+
+.contact h3 {
+  color: brown;
+}
+
+.contact a {
+  color: white;
+  background-color: blue;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+#game {
+  background-color: yellowgreen;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 2rem 0;
+}
+
+#game h2 {
+  color: yellow;
+  margin: 0 0 1rem;
+}
+
+#game pre {
+  color: chartreuse;
+  background-color: blue;
+  font-size: large;
+  font-weight: bolder;
+  font-style: italic;
+  padding: 1rem;
+  margin: 0;
+}
+
+#game H4 {
+  color: dark red;
+  border: solid yellow;
+  background-color: yellowgreen;
+}
+
+#game H4:hover {
+  color: darkorange;
+}
+</style>
 </html>
+  
